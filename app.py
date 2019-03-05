@@ -38,13 +38,13 @@ rss_feed = RssFeed()
 football_news = FootballNews()
 football_api = FootballApi()
 
-channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
-channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
+channel_secret = os.getenv('0cd16eb75c95de501e23b61e5aeca1b4', None)
+channel_access_token = os.getenv('geyTi+ZrW0fQZTissfAqBb53bCzzVbMRHLbsOWT1gpOxRwCCgAyCevSyluC+tCdG94ik2okAYTfAIjMW+c86EeeB+VRoYp6ijyLTXwVLQpsghcKREIxEOrtvKikARyAE/xeHqykELJOU/nnkVgEmJwdB04t89/1O/w1cDnyilFU=', None)
 if channel_secret is None:
-    print('Specify LINE_CHANNEL_SECRET as environment variable.')
+    print('Specify 0cd16eb75c95de501e23b61e5aeca1b4 as environment variable.')
     sys.exit(1)
 if channel_access_token is None:
-    print('Specify LINE_CHANNEL_ACCESS_TOKEN as environment variable.')
+    print('Specify geyTi+ZrW0fQZTissfAqBb53bCzzVbMRHLbsOWT1gpOxRwCCgAyCevSyluC+tCdG94ik2okAYTfAIjMW+c86EeeB+VRoYp6ijyLTXwVLQpsghcKREIxEOrtvKikARyAE/xeHqykELJOU/nnkVgEmJwdB04t89/1O/w1cDnyilFU= as environment variable.')
     sys.exit(1)
 
 line_bot_api = LineBotApi(channel_access_token)
